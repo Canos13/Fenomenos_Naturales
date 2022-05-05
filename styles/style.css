@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url("../assets/sx-min.jpg");
+    background-size: cover;
+    height: 800px;
+    background-repeat: no-repeat;
+}
