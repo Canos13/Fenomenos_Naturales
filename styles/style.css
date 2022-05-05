@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,71 @@
 
 header{
     background-image: url("../assets/sx-min.jpg");
-    background-size: cover;
-    height: 800px;
+    background-size: 100%;
+    height: 680px;
     background-repeat: no-repeat;
 }
+
+.welcome,
+.headerTitle,
+.firstBtn{
+    font-family: 'Baloo 2', Arial;
+}
+
+.welcome{
+    text-align: right;
+    color: #000;
+    font-size: 2.7rem;
+    line-height: 1;
+    padding: 25px;
+    padding-left: 500px;
+}
+
+.headerTitle{
+    color: #fff;
+    font-size: 6rem;
+    padding: 25px;
+    padding-right: 650px;
+    padding-top: 150px;
+    line-height: 1;
+}
+
+.firstBtn{   
+    padding: 0.3em 1.3em;
+    border: 4px solid #000;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    transition: .3s;
+    z-index: 1;
+    font-family: 'Baloo 2', Arial;
+    color: #000;
+    display: block;
+    margin: 0 auto; 
+}
+
+.firstBtn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #000;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.firstBtn:hover::before {
+    width: 105%;
+}
+
+.firstBtn:hover {
+    color: #fff;
+}
+
